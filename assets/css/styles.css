@@ -12,14 +12,13 @@ body, html{
 }
 
 .content {
-    /* position: relative; */
     width: 1110px;
     margin: 0 auto;
     padding-left: 163px;
 }
 
 .firstScreen .wrapper {
-    background: url(../images/Frame.png) #F4F6F9 ;
+    background: url(../images/Frame.png) #F4F6F9;
     background-position: 133% 0%;
     background-repeat: no-repeat;
 }
@@ -28,16 +27,16 @@ body, html{
     height: 665px;
 }
 
-.logo, .logo img {
+.firstScreen__img {
     width: 99px;
     height: 32px;
 }
 
-.logo {
+.firstScreen__logo {
     padding-top: 61px;
 }
 
-.head {
+.firstScreen__head {
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
@@ -50,7 +49,7 @@ body, html{
     margin-bottom: 26px;
 }
 
-.text {
+.firstScreen__text {
     width: 453px;
     height: 52px;
     font-family: Lato;
@@ -59,4 +58,330 @@ body, html{
     font-size: 18px;
     line-height: 26px;
     color: #4F4F4F;
+}
+
+.firstScreen__appStore {
+    margin-top: 35px;
+}
+
+.firstScreen__google {
+    margin-left: 30px;
+}
+
+.secondScreen .wrapper {
+    background: url(../images/Footballists.png);
+    background-position: 7% 0%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.secondScreen .wrapper::after {
+    content: "";
+	display: block;    
+	width: 805px;
+	height: 100%;    
+	position: absolute;
+	top: 0;      
+	left: 38px;   
+	background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+}
+
+.secondScreen .content {
+    height: 592px;
+}
+
+.secondScreen__header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+    margin-left: 634px;
+    margin-top: 132px;
+    z-index: 100;
+    position: absolute;
+}
+
+.secondScreen__head {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+    margin-left: 634px;
+    margin-top: 181px;
+    z-index: 100;
+    position: absolute;
+}
+
+.secondScreen__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F4F4F;
+    margin-left: 634px;
+    margin-top: 244px;
+    width: 407px;
+    z-index: 100;
+    position: absolute;
+}
+
+.secondScreen__link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+    margin-left: 634px;
+    margin-top: 452px;
+    z-index: 100;
+    position: absolute;
+    text-decoration: none;
+}
+
+.secondScreen__link:hover {
+    color: blue;
+    transition: 0.3s;
+}
+
+.secondScreen__video {
+    position: absolute;
+    z-index: 100;
+    margin-top: 296px;
+    margin-left: 106px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 27.29px;
+    height: 12.58px;
+    z-index: 333;
+    margin-top: 299px;
+    margin-left: 306px;
+}
+  
+  /* Скрыть флажок HTML по умолчанию */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+  /* Ползунок */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 104.896px;
+    width: 27.29px;
+    height: 12.58px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 20.99px;
+    height: 20.97px;
+    right: 12px;
+    bottom: -3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+    box-shadow: 0px 2.09791px 2.09791px rgba(0, 0, 0, 0.25);
+}
+  
+input:checked + .slider {
+    background-color: #979797;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+}
+
+.secondScreen__board {
+    width: 360px;
+    height: 218.06px;
+    background: #FFFFFF;
+    box-shadow: -22.0416px 23.8785px 48.9814px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    position: absolute;
+    z-index: 200;
+    margin-top: 109px;
+}
+
+.secondScreen__date {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16.7833px;
+    line-height: 22px;
+    color: #4F4F4F;
+    margin-top: 27px;
+    margin-left: 16px;
+    margin-bottom: 0;
+}
+
+.secondScreen__versus {
+    width: 76.62px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-left: 16px;
+    margin-top: 13px;
+    margin-bottom: 0;
+}
+
+.secondScreen__discription {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+    margin-left: 16px;
+}
+
+.secondScreen__arsenal {
+    position: absolute;
+    margin-left: 202px;
+    margin-top: -117px;
+}
+
+.secondScreen__chelsea {
+    position: absolute;
+    z-index: 300;
+    margin-top: -117px;
+    margin-left: 261px;
+}
+
+.secondScreen__toggle {
+    width: 360px;
+    height: 49.27px;
+    background: #EEEEEE;
+    border-radius: 0px 0px 4px 4px;
+    margin-top: 24px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.secondScreen__toggleText {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18.8812px;
+    line-height: 25px;
+    color: #4F4F4F;
+    margin-left: 16px;
+    margin-top: 13px;
+    position: absolute;
+}
+
+.thirdScreen .wrapper {
+    background: url(../images/thirdScreenTheme.png);
+    background-repeat: no-repeat;
+    background-position: -42% 35%;
+    
+}
+
+.thirdScreen .content {
+    height: 674px;
+}
+
+.thirdScreen__header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+    padding-top: 203px;
+}
+
+.thirdScreen__head {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+}
+
+.thirdScreen__text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F4F4F;
+    width: 480px;
+}
+
+.thirdScreen__link {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+    margin-top: 38px;
+    position: absolute;
+    text-decoration: none;
+}
+
+.fourthScreen .wrapper {
+    background: #00ADEE;
+}
+
+.fourthScreen .content {
+    height: 735px;
+}
+
+.fourthScreen__header {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 37px;
+    color: #FFFFFF;
+    padding-top: 74px;
+    padding-left: 304px;
+}
+
+.fourthScreen__paragraphs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.fourthScreen__paragraphs div  {
+    width: 311px;
+    height: 166px;
 }
